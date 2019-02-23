@@ -38,5 +38,5 @@ def main(console):
             break
         elif touche == 'q':
             break
-
-curses.wrapper(main)
+if __name__ == '__main__':
+    curses.wrapper(main)
