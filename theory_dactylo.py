@@ -2,51 +2,60 @@
 Module theorie
 """
 
+# j et f 
 un = """
-     jfjf fjfjfjfffj ffjfjfjf fjfjfjjjjjfjfffjfjfjff fjfffjfjfjfjfffjf fjfjfjfff fjfjfjfjfjfjj
-     jfjfjfjfjfjfjfjfj jfjffffjjjjjj jfjfjfjfjfjfj fjfjfjjfjf jjfjfjfff ffjfjfjffjf jfjfjjffff
-     jfj jfjfjjfjfj jfjfjfjfjfjf fffjfjf fjfjfjjfjjfjfjf fjfjjfjfjjfjjfjfjfjfjfjfjf jjjjjjjjff
-     jfjfjf jfjjf
+     jjff fjfffjfjfj fjfffjjf fjfjfjjjjffjfffjfjfjjf fjffffjfjfffjjfjf fjjffffjf ffjffjjjfjfjj      
+     jffjfffjffjfjjjjj jjfjffffjjjjj jjfffjfjfjjfj fjfjjjjfff jjffjjfff fjjfjjfffff jfjffjjfff      
+     jfj jjffjfjfjj jjjjfjffffjf ffjfjff ffjjffjjjffjjjf fjffjjjfjjfjjffjffjfjjjjff jjjjjjfjjf      
+     jjffjf jfjjf
      """
 
+# j, f, k, d
 deux = """
-       fdfddd jfkddf kdjfkdjfddkjk ddfdfdkjfkdjkfj dddjjjjkkdd fjkdkfjfdkdfjfjfkkk jdkfjddd kj
-       kjdkfjkdf dkkkkkfdfkjdjkjf kjdkfjdkjkfkdfkd kjdfkjfkdjf dfffffkjdkkkkkk djfkjdkkkfkdf k
-       kjdkjfdkdfk fkdkjfdkjfkkjkjkjkjkkjd fkdjfkdjfkdjkfkdjkfjdkf kdjkfjdkfdjkfjdkjfkjdkfkkdf
-       kjdkddfkkjkd
+       ffdddd jdkfdf kddjdjkfkdfjk ddffjkdfkdjfdkj djdkjddkjjd fjkffdkkkfkfdjdjjfk jjdkdfdd kj        
+       kjdkdjfkf dkjkkddfjkjkkkff kkjfkfkdjjkfddkd kffjdkjkjdf djkfkfkfkdfkfkk ddfkjkkfdjkkfkk        
+       kjddkjkdffk ffkfjkkjdkkkdkjjkkkjjjd fkdjjkjjdkkfdfdkkfkdfjf kdkfkkjjfdjdkkdfjfkfdjkdkjf        
+       kkdddjkkkjfd
        """
 
+# j, f, k, d, l, s
 trois = """
-        sfkdljsfdls fdsdsdkljlkjdsfkljsklfjsd kljsdkfsdfsdjk lkjsdlkjfsdkljsdklf lskdjflksdjlj
-        lkjlksddfslkdjs kljsdf lkfsdjlksdklklkdsjflksdjdf lkjsldkjfsdklsfd lkjklsdfddsfdslkjll
-        klsljlfsklsdjfksd ldskjfdlskjflskjldfs lksdsdfkljsdfkljds flkdsjlkfdjfsdfljksfd fsdlkj
-        kljdsfkfldss
+        sjdlldksffs fljjdssdlllddfjskskkkfjsd kfdslsfdsdkjjk ljkksfkkjsdlldjsdlf ljssjddkfkllj         
+        ldjkfdksjkdllss ksljdf lkkjddjsdljkdkflkkdslslfsf lsjjldfksslfkkdd ljfklkldkdddsssfljl         
+        ksflkdlsfsljlksjd lddjsjflfklkdslfkjss ldfklkssddjjldfsks fdfflljsskdfdsjkkfljd fklsdj         
+        klslsdjfdkfs
         """
         
+# j, f, k, d, l, s, a, é        
 quatre = """
-         aéslkdfjfaskjldas fslkfsdsdfklsdf asfdkljsadfsdsdfaasfd kljklsfdfsd sdffsdlkjéjslfjél
-         léjkfsdaskfldfsdalkjsdlkjasjklsadf lkjsjass élaéaskfljs kljsadfélasdkjskadj lkjlkjsaf
-         lékjasffs sfsadélksjafdlkjlkjsf skléafjfséalkjf lskfjdédskjlakljakljaskl jéasfasdélkj
-         jkélasdfa fs
+         aeslkdfjfaskjldas fslkfsdsdfklsdf asfdkljsadfsdsdfaasfd kljklsfdfsd sdffsdlkjejslfjel           
+         lejkfsdaskfldfsdalkjsdlkjasjklsadf lkjsjass elaeaskfljs kljsadfelasdkjskadj lkjlkjsaf           
+         lekjasffs sfsadelksjafdlkjlkjsf skleafjfsealkjf lskfjdedskjlakljakljaskl jeasfasdelkj           
+         jkelasdfa fs
          """
 
+# j, f, k, d, l, s, a, é
 cinq = """
-       aslékjfdtzatlké jzklaéfzé alkjtklzaflkjéafdatéjkl zéafzatjatéjlj falkztzttazlkatszdk jk
-       alfésjkttzaltkfjaélskfdjds atztztalkjffjddasflj attkzlfkaldfjfadéslkjaéfkj affsdsadfsdf
-       afkljakféfsldjélafkljédfatztztz aélfkjfsjdl ztakljféfsékltztztztj kélasfkljasfaé tzkaéa
-       asdfjlkatélk
+       aslekjfdtzatlke jzklaefze alkjtklzaflkjeafdatejkl zeafzatjatejlj falkztzttazlkatszdk jk         
+       alfesjkttzaltkfjaelskfdjds atztztalkjffjddasflj attkzlfkaldfjfadeslkjaefkj affsdsadfsdf         
+       afkljakfefsldjelafkljedfatztztz aelfkjfsjdl ztakljfefsekltztztztj kelasfkljasfae tzkaea         
+       asdfjlkatelk
        """
 
+# j, f, k, d, l, s, a, é, g, h
 six = """
-      asékfljbnénj ékljasflknbnjnasbfjé naéjsbbslajbfsnlfbasnjln slfjsdjlnfasbajénljalsknb bbb
-      aéjanfdkdjénklfsjabjfanéjnjfasjdlka sjnbéasjfbsjéasnfljsfa jlnsaflbjsajn
-      aéjanfdkdjénklfsjabjfanéjnjfasjdlka sjnbéasjfbsjéasnfljsfa jlnsaflbjsajn
+      asejgklgdfha asgjkehasfdhkyasdkjh sdfjklsajgleashfjked asjgkhagsdfjehfej asgjfasdejkfgkf        
+      asjkkkkkkkkkghdfajlsha sgkhsafdejksahf gafhseajkehj saekjgfmheskjahfg skajhasjhgfsajkees        
+      asgkjhsadg kjhsadlkjgkesadasgdekkjsfaghsd sakjghsahkgkesa askjhgkjsahgekjahs afgskjhsjsa        
+      sajkgassfdg 
       """
 
+# j, f, k, d, l, s, a, é, n, g, h
 sept = """
 
        """
 
+# 
 huit = """
 
        """
@@ -68,15 +77,14 @@ douze = """
         """
 
 treize = """
-
+            
          """
 
 quatorze = """
-            
+
            """
 
 quinze = """
 
          """
 
-print(one)
