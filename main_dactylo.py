@@ -6,7 +6,13 @@ import curses
 
 def menu(console):
     """Fonction qui affiche menu principal."""
-    
+    console.clear()
+    console.leaveok(True)
+    lignes, colonnes = console.getmaxyx()
+    ligne_milieu = lignes // 2
+    texte = "Voulez-vous 1) Apprendre ou 2) Jouer?"
+    colonne_depart = (colonnes - len(texte)) // 2
+    console.addstr(ligne_milieu - 2, colonne_depart, texte)
     
 def timer():
     """Fonction qui gère le timer."""
@@ -21,9 +27,6 @@ def jouer():
     
 
 print("Voulez vous:")
-print("1) Apprendre")
-print("2) Jouer")
-choix = input(">>> ")
 
 if choix == 1:
     apprendre()
