@@ -3,11 +3,11 @@ Partie jouer
 """
 # Liste de choses à ajouter:
 # - timer
+# - mettre ca sur une interface curses
 # Bref tout ca c'était pour que tu voies ce que je veux faire 
 # Le truc de ecrivez Stop c'est temporaire, après on mettra le timer
 
 import random
-import curses
 
 TEXTE = ("""Recopiez le mot et appuyez sur Enter. 
 Écrivez Stop quand vous voulez arrêter.""")
