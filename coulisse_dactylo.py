@@ -3,11 +3,11 @@ Partie jouer
 """
 # Liste de choses à ajouter:
 # - timer
-# - mettre ca sur une interface curses
 # Bref tout ca c'était pour que tu voies ce que je veux faire 
 # Le truc de ecrivez Stop c'est temporaire, après on mettra le timer
 
 import random
+import curses
 
 TEXTE = ("""Recopiez le mot et appuyez sur Enter. 
 Écrivez Stop quand vous voulez arrêter.""")
@@ -30,7 +30,9 @@ def jouer_1():
         elif reponse == "Stop":
             print("Score final: {}".format(score))
             break 
-
+        else:
+            print("Réesayez!")
+            
 
 def jouer_2():
     """Fonction qui gère le niveau 2."""
@@ -46,6 +48,8 @@ def jouer_2():
         elif reponse == "Stop":
             print("Score final: {}".format(score))
             break   
+        else:
+            print("Réesayez!")
             
             
 def jouer_3():
@@ -62,6 +66,8 @@ def jouer_3():
         elif reponse == "Stop":
             print("Score final: {}".format(score))
             break   
+        else:
+            print("Réesayez!")
 
 
 niveau = int(input("Choisis un niveau (1, 2 ou 3): "))
