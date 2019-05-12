@@ -7,7 +7,6 @@ Partie jouer
 # Le truc de ecrivez Stop c'est temporaire, après on mettra le timer
 
 import random
-import curses
 
 TEXTE = ("""Recopiez le mot et appuyez sur Enter. 
 Écrivez Stop quand vous voulez arrêter.""")
