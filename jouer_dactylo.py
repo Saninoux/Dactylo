@@ -4,8 +4,6 @@ Partie jouer
 # Liste de choses à ajouter:
 # - timer
 # - mettre ca dans curses
-# Bref tout ca c'était pour que tu voies ce que je veux faire 
-# Le truc de ecrivez Stop c'est temporaire, après on mettra le timer
 
 import random
 
