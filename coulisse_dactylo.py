@@ -4,8 +4,6 @@ Partie jouer
 # Liste de choses à ajouter:
 # - timer
 # Bref tout ca c'était pour que tu voies ce que je veux faire 
-# J'ai mis le même truc 5 fois parce que l'utilisateur va entrer plusieurs
-# mots donc ca donne un apercu
 # Le truc de ecrivez Stop c'est temporaire, après on mettra le timer
 
 import random
