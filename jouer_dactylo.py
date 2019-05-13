@@ -26,7 +26,7 @@ LISTE_MOTS_3 = ["Épée", "Armée", "Trône", "Été", "Traître", "détrôner"]
 
 
 def jouer_1():
-    """Fonction qui gère le niveau 3."""
+    """Fonction qui gère le niveau 1."""
     score = 0
     print(TEXTE)
     while True:
