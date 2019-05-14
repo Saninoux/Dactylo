@@ -1,4 +1,3 @@
-    
 """
 Partie "jouer" du jeu dactylographique
 dernière modification faite le 14.05.2019
@@ -42,8 +41,6 @@ def jouer_1():
     # On initialise le score
     score = 0
     while True:
-        # On initialise le compteur
-        start = time.time()
         mot = random.choice(LISTE_MOTS_1)
         print("Mot: {}".format(mot))
         reponse = input(">>> ")
@@ -53,11 +50,6 @@ def jouer_1():
             # tout en indiquant le score actuel
             print("Mots écrits: {}".format(score))
             if score == 30:
-                # On arrête le compteur
-                end = time.time()
-                score_final = end - start
-                # On affiche le score final
-                print("Vous avez pris {} secondes.".format(score_final))
                 break
         # On donne une sortie à l'utilisateur
         elif reponse == "0":
@@ -71,7 +63,6 @@ def jouer_2():
     """Fonction qui gère le niveau 1."""
     score = 0
     while True:
-        start = time.time()
         mot = random.choice(LISTE_MOTS_2) # Ici, on prend la liste de mots 
         print("Mot: {}".format(mot))      # avec une difficulté moyenne
         reponse = input(">>> ")
@@ -79,9 +70,6 @@ def jouer_2():
             score += 1
             print("Mots écrits: {}".format(score))
             if score == 30:
-                end = time.time()
-                score_final = end - start
-                print("Vous avez pris {} secondes.".format(score_final))
                 break
         elif reponse == "0":
             break
@@ -93,7 +81,6 @@ def jouer_3():
     """Fonction qui gère le niveau 1."""
     score = 0
     while True:
-        start = time.time()
         mot = random.choice(LISTE_MOTS_3) # Ici, on prend la liste de mots 
         print("Mot: {}".format(mot))      # avec la plus grande difficulté
         reponse = input(">>> ")
@@ -101,9 +88,6 @@ def jouer_3():
             score += 1
             print("Mots écrits: {}".format(score))
             if score == 30:
-                end = time.time()
-                score_final = end - start
-                print("Vous avez pris {} secondes.".format(score_final))
                 break
         elif reponse == "0":
             break
@@ -115,8 +99,17 @@ def jouer_3():
 # son choix
 niveau = int(input("Choissisez un niveau (1, 2 ou 3): "))
 if niveau == 1:
+    start = time.time()
     jouer_1()
+    end = time.time()
+    print("Vous avez pris {} secondes.".format(round(end - start)))
 elif niveau == 2:
+    start = time.time()
     jouer_2()
+    end = time.time()
+    print("Vous avez pris {} secondes.".format(round(end - start)))
 elif niveau == 3:
+    start = time.time()
     jouer_3()
+    end = time.time()
+    print("Vous avez pris {} secondes.".format(round(end - start)))
