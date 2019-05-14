@@ -96,20 +96,14 @@ def jouer_3():
 
 
 # On demande un niveau au joueur et on indique quel fonction prendre selon
-# son choix
+# son choix, avec une boucle pour gérer les éxceptions
 niveau = int(input("Choissisez un niveau (1, 2 ou 3): "))
+start = time.time()
 if niveau == 1:
-    start = time.time()
     jouer_1()
-    end = time.time()
-    print("Vous avez pris {} secondes.".format(round(end - start)))
 elif niveau == 2:
-    start = time.time()
     jouer_2()
-    end = time.time()
-    print("Vous avez pris {} secondes.".format(round(end - start)))
 elif niveau == 3:
-    start = time.time()
     jouer_3()
-    end = time.time()
-    print("Vous avez pris {} secondes.".format(round(end - start)))
+end = time.time()
+print("Vous avez pris {} secondes.".format(round(end - start)))
