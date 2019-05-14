@@ -1,5 +1,7 @@
 """
-Partie jouer
+Partie "jouer" du jeu dactylographique
+dernière modification le 14.05.2019
+auteurs: JAWDEKAR Aarush et THAY San
 """
 # Liste de choses à ajouter:
 # - mots
