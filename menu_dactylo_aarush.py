@@ -10,7 +10,7 @@ PARTIES = ["Apprendre",  "Jouer"]
 
 def menu(console):
     """
-    Fonction principale gérée par curses
+    Fonction principale qui gère le menu
     """
     console.clear()
     console.leaveok(True)
