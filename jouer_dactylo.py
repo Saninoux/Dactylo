@@ -6,6 +6,7 @@ auteurs: JAWDEKAR Aarush et THAY San
 # Liste de choses à ajouter:
 # - mots
 # - interface curses
+# - éviter redondances
 import random
 import time 
 
