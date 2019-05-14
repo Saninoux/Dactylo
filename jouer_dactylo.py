@@ -1,3 +1,4 @@
+    
 """
 Partie "jouer" du jeu dactylographique
 dernière modification le 14.05.2019
@@ -6,14 +7,15 @@ auteurs: JAWDEKAR Aarush et THAY San
 # Liste de choses à ajouter:
 # - mots
 # - interface curses
-# - éviter redondances
+# - éviter redondances 
 import random
 import time 
 
 # On définit les constantes
 TEXTE = ("""Recopiez le mot qui vous sera donné et appuyez sur Enter. 
 Le but du jeu est d'écrire 30 mots dans le moins de temps possible.
-Plusieurs niveaux de difficulté vous sont proposés.""")
+Plusieurs niveaux de difficulté vous sont proposés.
+Appuyez sur 0 pour quitter pendant le jeu.""")
 LISTE_MOTS_1 = ["sera", "forger", "dictionnaire", "entre", "moule", "mecs", "douanier", 
                 "effets", "bercez", "institut", "oasis", "persifleur", "sel", "tiens",
                 "ramifications", "porter", "lots", "embarquer", "insultant", "publiait",
@@ -55,6 +57,9 @@ def jouer_1():
                 # On affiche le score final
                 print("Vous avez pris {} secondes.".format(score_final))
                 break
+        # On donne une sortie à l'utilisateur
+        elif reponse == "0":
+            break
         else:
             # On indique à l'utilisateur qu'il n'a pas eu le point
             print("Faux!")
@@ -76,6 +81,8 @@ def jouer_2():
                 score_final = end - start
                 print("Vous avez pris {} secondes.".format(score_final))
                 break
+        elif reponse == "0":
+            break
         else:
             print("Faux!")
             
@@ -96,6 +103,8 @@ def jouer_3():
                 score_final = end - start
                 print("Vous avez pris {} secondes.".format(score_final))
                 break
+        elif reponse == "0":
+            break
         else:
             print("Faux!")
 
