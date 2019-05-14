@@ -4,10 +4,12 @@ Partie "jouer" du jeu dactylographique
 dernière modification faite le 14.05.2019
 auteurs: JAWDEKAR Aarush et THAY San
 """
+
 # Liste de choses à ajouter:
 # - mots
 # - interface curses
 # - éviter redondances 
+
 import random
 import time 
 
