@@ -27,21 +27,22 @@ LISTE_MOTS_1 = ["sera", "forger", "dictionnaire", "entre", "moule", "mecs", "dou
                 "perquisitionner", "faille", "intact", "encombrant", "vert", "artistique", 
                 "percer", "aspirateur", "tropiques", "influences", "imposer", 
                 "chips", "fanfare", "arbre"]
-LISTE_MOTS_2 = ["Tony", "Robert", "Steve", "Chris", "Natasha", "Scarlett", "Bruce", "Clint", 
-                "Jeremy", "Thor", "Clark", "Henry", "Wayne", "Ben", "Ross", "David", "Chandler",
-                "Matthew", "Joey", "Matt", "Rachel", "Jennifer", "Monica", "Courtney", "Phoebe",
-                "Lisa", "Homer", "Bart", "Marge", "Maggie", "Abe", "Apu", "Milhouse"]
-LISTE_MOTS_3 = ["Épée", "Armée", "Trône", "Été", "Traître", "détrôner"]
+LISTE_MOTS_2 = ["Tony", "Robert", "Steve", "Chris", "Natasha", "Scarlett", "Bruce", "Mark",
+                "Clint", "Jeremy", "Thor", "Clark", "Henry", "Wayne", "Ben", "Ross", 
+                "David", "Chandler", "Matthew", "Joey", "Matt", "Rachel", "Jennifer",
+                "Monica", "Courtney", "Phoebe", "Lisa", "Homer", "Bart", "Marge", 
+                "Maggie", "Abe", "Apu", "Milhouse"]
+LISTE_MOTS_3 = ["Sébastien"]
 
 print(TEXTE)
 
 
-def jouer_1():
+def jouer():
     """Fonction qui gère le niveau 1."""
     # On initialise le score
     score = 0
     while True:
-        mot = random.choice(LISTE_MOTS_1)
+        mot = random.choice(choix)
         print("Mot: {}".format(mot))
         reponse = input(">>> ")
         if reponse == mot:
@@ -59,51 +60,26 @@ def jouer_1():
             print("Faux!")
 
 
-def jouer_2():
-    """Fonction qui gère le niveau 1."""
-    score = 0
-    while True:
-        mot = random.choice(LISTE_MOTS_2) # Ici, on prend la liste de mots 
-        print("Mot: {}".format(mot))      # avec une difficulté moyenne
-        reponse = input(">>> ")
-        if reponse == mot:
-            score += 1
-            print("Mots écrits: {}".format(score))
-            if score == 30:
-                break
-        elif reponse == "0":
-            break
-        else:
-            print("Faux!")
-            
-            
-def jouer_3():
-    """Fonction qui gère le niveau 1."""
-    score = 0
-    while True:
-        mot = random.choice(LISTE_MOTS_3) # Ici, on prend la liste de mots 
-        print("Mot: {}".format(mot))      # avec la plus grande difficulté
-        reponse = input(">>> ")
-        if reponse == mot:
-            score += 1
-            print("Mots écrits: {}".format(score))
-            if score == 30:
-                break
-        elif reponse == "0":
-            break
-        else:
-            print("Faux!")
+def choix_niveau():
+    niveau = int(input("Choissisez un niveau (1, 2 ou 3): "))
+    if niveau == 1:
+        mot = LISTE_MOTS_1
+    elif niveau == 2:
+        mot = LISTE_MOTS_2
+    elif niveau == 3:
+        mot = LISTE_MOTS_3
+    return mot
 
 
+def temps():
+    """Fonction qui gère le timer."""
+    start = time.time()
+    jouer()
+    end = time.time()
+    print("Vous avez pris {} secondes.".format(round(end - start)))
+    
+
+choix = choix_niveau()
+temps()
 # On demande un niveau au joueur et on indique quel fonction prendre selon
-# son choix, avec une boucle pour gérer les éxceptions
-niveau = int(input("Choissisez un niveau (1, 2 ou 3): "))
-start = time.time()
-if niveau == 1:
-    jouer_1()
-elif niveau == 2:
-    jouer_2()
-elif niveau == 3:
-    jouer_3()
-end = time.time()
-print("Vous avez pris {} secondes.".format(round(end - start)))
+# son choix, avec une boucle pour gérer les éxceptions+
