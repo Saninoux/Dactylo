@@ -1,5 +1,5 @@
 """
-Partie "jouer" du jeu dactylographique
+Partie "apprendre" du jeu dactylographique
 dernière modification faite le 14.05.2019
 auteurs: JAWDEKAR Aarush et THAY San
 """
@@ -23,7 +23,6 @@ def apprendre():
             else:
                 print("Faux!")
                 erreur += 1
-                print(erreur)
                 False
 
     return erreur

@@ -13,13 +13,5 @@ def temps_jouee():
     start = time.time()
     err = doc_apprendre.apprendre()
     end = time.time()
-    temps_jouee = int(round(end - start))
-    print("Vous avez pris {}, avec {} erreurs.".format(temps_jouee, err))
-
-
-def main():
-    temps_jouee()
-
-
-if __name__ == '__main__':
-    main()
+    secondes_prises = int(round(end - start))
+    return secondes_prises, err
