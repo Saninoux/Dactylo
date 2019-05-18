@@ -1,54 +1,22 @@
 """
 Partie "jouer" du jeu dactylographique
-dernière modification faite le 14.05.2019
+dernière modification le 18.05.2019
 auteurs: JAWDEKAR Aarush et THAY San
 """
+# On importe les modules et textes nécessaires
 import random
 import time 
+import textes_dactylo
 
-# On définit les constantes
-TEXTE = ("""Recopiez le mot qui vous sera donné et appuyez sur Enter. 
-Le but du jeu est d'écrire 30 mots dans le moins de temps possible.
-Plusieurs niveaux de difficulté vous sont proposés.
-Au niveau 3, il vous sera peut-être demandé d'écrire plusieurs mots à la fois.
-Appuyez sur 0 pour quitter pendant le jeu.""")
-LISTE_MOTS_1 = ["sera", "forger", "dictionnaire", "entre", "moule", "malade", "douanier", 
-                "effets", "bercez", "institut", "oasis", "persifleur", "sel", "tiens",
-                "ramifications", "porter", "lots", "embarquer", "insultant", "publiait",
-                "associe", "cabine", "effets", "coca", "phrase", "casquette", "seringue", 
-                "chaise", "administrer", "orgelet", "ralentir", "moral", "passer",
-                "pomme", "renforcent", "pleurs", "ordinateur", "eucharistie", "tailloir", 
-                "baver", "sagace", "clan", "perle", "plombier", "habile", "artiste",
-                "perquisitionner", "faille", "intact", "encombrant", "vert", "artistique", 
-                "percer", "aspirateur", "tropiques", "influences", "imposer", 
-                "chips", "fanfare", "arbre"]
-LISTE_MOTS_2 = ["Tony", "Robert", "Steve", "Chris", "Natasha", "Scarlett", "Bruce", "Mark",
-                "Clint", "Jeremy", "Thor", "Clark", "Henry", "Wayne", "Ben", "Ross", 
-                "David", "Chandler", "Matthew", "Joey", "Matt", "Rachel", "Jennifer",
-                "Monica", "Courtney", "Phoebe", "Lisa", "Homer", "Bart", "Marge", 
-                "Maggie", "Abe", "Apu", "Milhouse", "Cristiano", "Lionel", "Roger", "Michael"
-                "Jessica", "Luke", "Danny", "Elektra", "Mike", "Lucas", "Dustin", "Eleven"
-                "Steve", "Nancy", "Johnathan", "Joyce", "Hopper", "Paul", "Tokyo", "Rio",
-                "Moscow", "Denver", "Nairobi", "Helsinki", "Oslo", "Walter", "Jesse", "Jane"
-                "Daniel", "Otis", "Jean", "Olga", "Adam", "Harry", "Liam", "Zayn", "Niall"
-                "Louis", "Raphael", "Jeff"]
-LISTE_MOTS_3 = ["Sébastien Nguyen", "Jéremie Viala", "Daenerys", "Éric", "Dothraki", 
-                "anticonstitutionellement", "rhododendron", "parallèle", "Méditerranée", "Pyrénées", 
-                "hyperprésidentialisation", "Béatrice", "Léonard", "Mélisandre", "Margaery",
-                "Jérôme", "Molière", "Noâm", "Êve", "Yaêl", "Cléopâtre", "César", "Astérix",
-                "Obélix", "Abraracourcix", "Assurancetourix", "Cétautomatix", "Odralfabétix",
-                "Iélosubmarine", "ménagères", "élèves", "bâtiment", "Castafiore", "Aventurépix"
-                "Allégorix", "Déboitementduménix", "Petitélégrafix", "Égyptiens", "Calédoniens",
-                "Analgésix", "Iron Man", "Captain America", "Black Widow", "Saint-Étienne",
-                "vene, vidi, vici", "Abu Dhabi", "Indonésie", "Brésil", "Saint-Pétersbourg",
-                "Severus Rogue", "Nymphadora", "Expelliarmus", "Avada Kedavra", "Obi-Wan Kenobi"
-                "Anakin Skywalker", "R2-D2", "C-3PO", "BB-8", "Wingardium Leviosa"]
+# On affiche un méssage d'introduction à l'utilisateur
+print(textes_dactylo.TEXTE)
 
-print(TEXTE)
+
+# On définit les fonctions qui seront utilisés 
 
 
 def jouer():
-    """Fonction qui gère le niveau 1."""
+    """Fonction qui gère le jeu."""
     # On initialise le score
     score = 0
     while True:
@@ -71,23 +39,46 @@ def jouer():
 
 
 def choix_niveau():
-    niveau = int(input("Choissisez un niveau (1, 2 ou 3): "))
-    if niveau == 1:
-        mot = LISTE_MOTS_1
-    elif niveau == 2:
-        mot = LISTE_MOTS_2
-    elif niveau == 3:
-        mot = LISTE_MOTS_3
+    """Fonction qui gère le choix des niveaux."""
+    try:
+        # On définit niveau et mot comme globales pour ne pas avoir
+        # d'erreurs s'il faut gérer les éxceptions
+        global niveau
+        global mot
+        # On demande un niveau à l'utilisateur
+        niveau = int(input("Choissisez un niveau (1, 2 ou 3): "))
+        # On définit la liste de mots en fonction du niveau choisi
+        if niveau == 1:
+            mot = textes_dactylo.LISTE_MOTS_1
+        elif niveau == 2:
+            mot = textes_dactylo.LISTE_MOTS_2
+        elif niveau == 3:
+            mot = textes_dactylo.LISTE_MOTS_3
+    # On indique ce qui se passe si l'utilisateur entre des lettres
+    except ValueError:
+        print("Entrez un chiffre svp!")
+        choix_niveau()
+    # On indique ce qui se passe si l'utilisateur entre un niveau trop grand
+    # ou trop petit
+    if niveau < 1 or niveau > 3:
+        print("Lisez la consigne attentivement svp!")
+        choix_niveau()
     return mot
 
 
 def temps():
-    """Fonction qui gère le timer."""
+    """Fonction qui chronomètre le temps de l'utilisateur."""
+    # On démarre le chrono
     start = time.time()
+    # On fait jouer l'utilisateur
     jouer()
+    # On arrête le chrono lorsque l'utilisateur à fini
     end = time.time()
+    # On indique combien de temps l'utilisateur a pris
     print("Vous avez pris {} secondes.".format(round(end - start)))
     
-
+    
+# On utilise les fonctions pour faire jouer l'utilisateur
+# La fonction "jouer" est déjà dans la fonction "temps"
 choix = choix_niveau()
 temps()
