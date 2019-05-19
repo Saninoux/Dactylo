@@ -3,13 +3,13 @@ Partie "apprendre" du jeu dactylographique
 dernière modification faite le 14.05.2019
 auteurs: JAWDEKAR Aarush et THAY San
 """
-import demander_niveau
+import doc_demander_niveau
 
 # caractere_entraine = "anticonstitutionnellement"
 
 
 def apprendre():
-    caractere_entraine = demander_niveau.ask_level()
+    caractere_entraine = doc_demander_niveau.ask_level()
     erreur = 0
     for lettre in range(10,len(caractere_entraine)+9):
         while True:
