@@ -47,6 +47,6 @@ LISTE_MOTS_3 = ["Sébastien Nguyen", "Jéremie Viala", "Daenerys", "Éric",
                 "Calédoniens", "Analgésix", "Iron Man", "Captain America", 
                 "Black Widow", "Saint-Étienne", "Veni, vidi, vici", 
                 "Abu Dhabi", "Indonésie", "Brésil", "Saint-Pétersbourg", 
-                "Severus Rogue", "Nymphadora", "Expelliarmus", "Avada Kedavra",
+                "Wojciech Szczesny", "Nymphadora", "Expelliarmus", "Avada Kedavra",
                 "Obi-Wan Kenobi", "Anakin Skywalker", "R2-D2", "C-3PO", "BB-8",
                 "Wingardium Leviosa"]
