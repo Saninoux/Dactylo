@@ -52,8 +52,8 @@ LISTE_MOTS_3 = ["Sébastien Dupont", "Jéremie Dupond", "Daenerys", "Éric",
                 "Wingardium Leviosa"]
 
 
-# pour que fonction annuler si la fonction executer
-# intentiellemnt par user
+# pour que fonction annuler si la fonction executée
+# intentionellement par user
 def do_anything():
     pass
 
