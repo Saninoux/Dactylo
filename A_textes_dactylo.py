@@ -34,7 +34,7 @@ LISTE_MOTS_2 = ["Tony", "Robert", "Steve", "Chris", "Natasha", "Scarlett",
                 "Nairobi", "Helsinki", "Oslo", "Walter", "Jesse", "Jane",
                 "Daniel", "Otis", "Jean", "Olga", "Adam", "Harry", "Liam",
                 "Zayn", "Niall", "Louis", "Raphael", "Jeff"]
-LISTE_MOTS_3 = ["Sébastien Nguyen", "Jéremie Viala", "Daenerys", "Éric",
+LISTE_MOTS_3 = ["Sébastien Dupont", "Jéremie Dupond", "Daenerys", "Éric",
                 "Dothraki", "anticonstitutionellement", "rhododendron",
                 "parallèle", "Méditerranée", "Pyrénées",
                 "hyperprésidentialisation", "Béatrice", "Léonard",
