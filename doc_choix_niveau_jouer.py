@@ -1,3 +1,10 @@
+"""
+Choix des niveaux du jeu
+dernière modification le 21.05.2019
+auteurs: JAWDEKAR Aarush, THAY San
+"""
+
+
 def choix_niveau():
     try:
         mot = "rien"
@@ -14,8 +21,8 @@ def choix_niveau():
     return liste_choisie
 
 
-# pour que fonction annuler si la fonction executer
-# intentiellemnt par user
+# Pour que la fonction s'annule si elle est exécutée
+# intentionellemnt par user
 def do_something():
     pass
 
