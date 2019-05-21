@@ -1,6 +1,8 @@
 """
+Timer du jeu 
+dernière modification le 21.05.2019
+auteurs: JAWDEKAR Aarush et THAY San
 """
-
 import jouer_fichier_V2.py
 import niveau_jouer
 import time
@@ -18,8 +20,8 @@ def temps():
     print("Vous avez pris {} secondes.".format(round(end - start)))
 
 
-# pour que fonction annuler si la fonction executer
-# intentiellemnt par user
+# Pour que la fonction s'annule si elle est exécutée
+# intentionellemnt par user
 def do_anything():
     pass
 
