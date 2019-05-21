@@ -16,7 +16,7 @@ def choix_niveau():
         elif niveau == 3:
             liste_choisie = "LISTE_MOTS_3"
     except ValueError:
-            print("Ceci n'est pas ce qui était demandé")
+            print("Ceci n'est pas ce qui était demandé.")
             choix_niveau()
     return liste_choisie
 
