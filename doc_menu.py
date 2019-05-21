@@ -40,6 +40,17 @@ def menu(console):
                 choix = 0
     return PARTIES[choix]
 
+
 def appeler():
     choix = curses.wrapper(menu)
     return choix
+
+
+# pour que fonction annuler si la fonction executer
+# intentiellemnt par user
+def do_something():
+    pass
+
+
+if __name__=="__main__":
+    do_something()
