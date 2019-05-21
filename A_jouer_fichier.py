@@ -11,18 +11,7 @@ import timer_pour_jouer
 import textes_dactylo
 
 # On définit les fonctions qui seront utilisés
-LISTE_MOTS_1 = ["sera", "forger", "dictionnaire", "entre", "moule", "malade",
-                "douanier", "effets", "bercez", "institut", "oasis",
-                "persifleur", "sel", "tiens", "ramifications", "porter",
-                "lots", "embarquer", "insultant", "publiait", "associe",
-                "cabine", "effets", "coca", "phrase", "casquette", "seringue",
-                "chaise", "administrer", "orgelet", "ralentir", "moral",
-                "passer", "pomme", "renforcent", "pleurs", "ordinateur",
-                "eucharistie", "tailloir", "baver", "sagace", "clan", "perle",
-                "plombier", "habile", "artiste", "perquisitionner", "faille",
-                "intact", "encombrant", "vert", "artistique", "percer",
-                "aspirateur", "tropiques", "influences", "imposer",
-                "chips", "fanfare", "arbre"]
+
 
 def fonction_jouer():
     """Fonction qui gère le jeu."""
@@ -46,6 +35,7 @@ def fonction_jouer():
             # On indique à l'utilisateur qu'il n'a pas eu le point
             print("Faux!")
 
+            
 fonction_jouer()
 # pour que fonction annuler si la fonction executer
 # intentiellemnt par user
