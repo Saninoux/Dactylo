@@ -1,9 +1,13 @@
-
-
+"""
+Fichier principal - le jeu lui-même
+dernière modification le 21.05.2019
+auteurs: JAWDEKAR Aarush, THAY San
+"""
 import doc_menu
 import curses
 import doc_temps_jouee
 import jouer
+
 
 def main():
     # user choisi entre apprendre et jouer
