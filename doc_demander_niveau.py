@@ -1,6 +1,8 @@
 """
+Niveaux de la partie apprendre
+dernière modification le 21.05.2019
+auteurs: JAWDEKAR Aarush, THAY San
 """
-
 import curses
 
 
@@ -37,8 +39,6 @@ CHOIX = [# choix0
           # choix15
           "texte_caracteres_speciaux.txt"]
 
-
-
 # def ask_level():
 #     """
 #     demander le niveau a l'utilisateur pour 'apprendre'
@@ -59,7 +59,6 @@ CHOIX = [# choix0
 #     ouvrir_fichier.close()
 #
 #     return MOT
-
 
 # def ask_level(console):
 #     """
@@ -129,6 +128,7 @@ def ask_level(console):
     MOT = ouvrir_fichier.read()
     ouvrir_fichier.close()
     return MOT
+
 
 def appeler_niveau():
     choix_niveau = curses.wrapper(ask_level)
