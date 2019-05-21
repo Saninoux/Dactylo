@@ -1,9 +1,8 @@
 """
 Menu du jeu dactylographique
-dernière modification faite le 14.05.2019
+dernière modification faite le 21.05.2019
 auteurs: JAWDEKAR Aarush et THAY San
 """
-
 import curses
 import time
 
@@ -46,8 +45,8 @@ def appeler():
     return choix
 
 
-# pour que fonction annuler si la fonction executer
-# intentiellemnt par user
+# Pour que la fonction s'annule si elle est exécutée
+# intentionellemnt par user
 def do_something():
     pass
 
