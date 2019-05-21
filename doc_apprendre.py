@@ -6,30 +6,7 @@ auteurs: JAWDEKAR Aarush et THAY San
 import doc_demander_niveau
 import curses
 import time
-# pour le test
-#caractere_entraine = "anticonstitutionnellement"
 
-
-# def apprendre():
-#     caractere_entraine = doc_demander_niveau.appeler_niveau()
-#     erreur = 0
-#     for lettre in range(10,len(caractere_entraine)+9):
-#         while True:
-#             print(caractere_entraine[0+lettre-10:lettre+1])
-#             lettre_tapee = input("tape une lettre: ")
-#             # quitter le programme
-#             if lettre_tapee == "1" or lettre_tapee == "\n":
-#                 break
-#             # si touche juste
-#             elif lettre_tapee == caractere_entraine[0+lettre-10]:
-#                 break
-#             # is touche fausse
-#             else:
-#                 print("Faux!")
-#                 erreur += 1
-#                 False
-#
-#     return erreur
 
 def apprendre_avec_curses(console):
     """
