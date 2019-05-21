@@ -1,4 +1,7 @@
 """
+Fichier pour le choix des niveaux
+dernière modification le 21.05.2019
+auteurs: JAWDEKAR Aarush, THAY San
 """
 import textes_dactylo
 import timer_pour_jouer
@@ -31,7 +34,6 @@ def choix_niveau():
     else:
         pass
     return mot
-
 
 
 def activation_fonction():
