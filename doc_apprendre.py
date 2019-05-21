@@ -38,7 +38,6 @@ def apprendre_avec_curses(console):
     console.refresh()
     console.leaveok(True)
     console.clear()
-
     nb_lignes, nb_colonnes = console.getmaxyx()
     milieu = nb_lignes // 2
     depart = (nb_colonnes - len("tape une lettre: ")) // 2
@@ -68,12 +67,14 @@ def apprendre_avec_curses(console):
                 console.clear()
                 erreur += 1
                 False
-
     return erreur
+
 
 def appeler_apprendre():
+    """Fonction qui appèle la fonction "apprendre"."""
     erreur = curses.wrapper(apprendre_avec_curses)
     return erreur
+
 
 def do_anything():
     pass
